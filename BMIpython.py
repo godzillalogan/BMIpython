@@ -1,0 +1,41 @@
+#輸入身高體重
+Heightcm=float(input("輸入身高cm"))
+Weightkg=float(input("輸入體重kg"))
+# 將身高(cm) 轉換為身高(m)
+Heightm=Heightcm/100
+#計算BMI
+BMI=Weightkg/(Heightm**2)
+
+if BMI< 18.5:
+    print(BMI,"過輕")
+    print()
+    print("      BMI標準")
+    print("過輕 : BMI<18.5")
+    print("正常：18.5<=BMI<24")
+    print("體位異常:")
+    print("過重：24<=BMI<27")
+    print("輕度肥胖：27 <= BMI < 30")
+    print("中度肥胖：30 <= BMI < 35")
+    print("重度肥胖：BMI >= 35")
+elif BMI >=18.5 and BMI<24:
+    print(BMI,"正常")
+    print()
+    print("      BMI標準")
+    print("過輕 : BMI<18.5")
+    print("正常：18.5<=BMI<24")
+    print("體位異常:")
+    print("過重：24<=BMI<27")
+    print("輕度肥胖：27 <= BMI < 30")
+    print("中度肥胖：30 <= BMI < 35")
+    print("重度肥胖：BMI >= 35")
+elif BMI >=24:
+    print(BMI,"過重")
+    print()
+    print("      BMI標準")
+    print("過輕 : BMI<18.5")
+    print("正常：18.5<=BMI<24")
+    print("體位異常:")
+    print("過重：24<=BMI<27")
+    print("輕度肥胖：27 <= BMI < 30")
+    print("中度肥胖：30 <= BMI < 35")
+    print("重度肥胖：BMI >= 35")
